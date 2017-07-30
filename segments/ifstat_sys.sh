@@ -5,7 +5,7 @@ run_segment() {
 	sleeptime="0.5"
 	if shell_is_osx; then
 		iface="en0"
-		type="⎆" # "☫" for wlan
+		type="☫" # "☫" for wlan
 		RXB=$(netstat -i -b | grep -m 1 $iface | awk '{print $7}')
 		TXB=$(netstat -i -b | grep -m 1 $iface | awk '{print $10}')
 		sleep "$sleeptime"
@@ -13,7 +13,7 @@ run_segment() {
 		TXBN=$(netstat -i -b | grep -m 1 $iface | awk '{print $10}')
 	else
 		iface="eth0"
-		type="⎆" # "☫" for wlan
+		type="☫" # "☫" for wlan
 		RXB=$(</sys/class/net/"$iface"/statistics/rx_bytes)
 		TXB=$(</sys/class/net/"$iface"/statistics/tx_bytes)
 		sleep "$sleeptime"

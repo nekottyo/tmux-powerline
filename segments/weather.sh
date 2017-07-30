@@ -28,7 +28,7 @@ export TMUX_POWERLINE_SEG_WEATHER_GREP="${TMUX_POWERLINE_SEG_WEATHER_GREP_DEFAUL
 # 1. Go to Yahoo weather http://weather.yahoo.com/
 # 2. Find the weather for you location
 # 3. Copy the last numbers in that URL. e.g. "http://weather.yahoo.com/united-states/california/newport-beach-12796587/" has the numbers "12796587"
-export TMUX_POWERLINE_SEG_WEATHER_LOCATION=""
+export TMUX_POWERLINE_SEG_WEATHER_LOCATION="26237038"
 EORC
 	echo "$rccontents"
 }
@@ -141,8 +141,8 @@ __get_condition_symbol() {
 			fi
 			;;
 		"rain" | "mixed rain and snow" | "mixed rain and sleet" | "freezing drizzle" | "drizzle" | "light drizzle" | "freezing rain" | "showers" | "mixed rain and hail" | "scattered showers" | "isolated thundershowers" | "thundershowers" | "light rain with thunder" | "light rain" | "rain and snow")
-			#echo "☂"
-			echo "☔"
+			echo "☂"
+			#echo "☔"
 			;;
 		"snow" | "mixed snow and sleet" | "snow flurries" | "light snow showers" | "blowing snow" | "sleet" | "hail" | "heavy snow" | "scattered snow showers" | "snow showers" | "light snow" | "snow/windy" | "snow grains" | "snow/fog")
 			#echo "☃"
@@ -162,7 +162,7 @@ __get_condition_symbol() {
 			;;
 		"breezy")
 			#echo "🌬"
-			echo "🍃"
+			#echo "🍃"
 			;;
 		"windy" | "fair/windy")
 			#echo "⚐"
